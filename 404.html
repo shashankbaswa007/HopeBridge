@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | HopeBridge Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-page { min-height: 100vh; display: flex; flex-direction: column; background: var(--parchment); }
+        .error-main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 60px 24px; text-align: center; }
+        .error-content { max-width: 500px; }
+        .error-code { font-family: 'Playfair Display', serif; font-size: 8rem; color: var(--terra); line-height: 1; margin-bottom: 20px; text-shadow: 4px 4px 0 rgba(200, 70, 48, 0.1); }
+        .error-content h1 { font-size: 2.2rem; margin-bottom: 16px; }
+        .error-content p { font-size: 1.1rem; color: var(--text2); margin-bottom: 40px; }
+    </style>
+</head>
+<body class="error-page">
+
+    <nav class="navbar" style="position: static; background: var(--white);">
+        <div class="container nav-container" style="justify-content: center;">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-mark"><i class="fa-solid fa-seedling"></i></span>
+                HOPEBRIDGE
+            </a>
+        </div>
+    </nav>
+
+    <main class="error-main">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1>This page got lost in the field.</h1>
+            <p>The link you clicked may be broken, or the page may have been moved. Let's get you back to our core mission.</p>
+            <a href="index.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-arrow-left"></i> Back to Homepage</a>
+        </div>
+    </main>
+
+    <footer class="site-footer" style="padding: 40px 0;">
+        <div class="container" style="text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem;">
+            &copy; 2024 HopeBridge Foundation. A registered Section 8 Non-Profit.
+        </div>
+    </footer>
+
+</body>
+</html>

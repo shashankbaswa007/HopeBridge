@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accountability & Transparency | HopeBridge Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-mark"><i class="fa-solid fa-seedling"></i></span>
+                HOPEBRIDGE
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#initiatives">Initiatives</a></li>
+                <li><a href="transparency.html" aria-current="page" style="color: var(--slate);">Accountability</a></li>
+                <li><a href="index.html#stories">Stories</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="index.html#donate" class="btn btn-nav">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== TRANSPARENCY HERO ===== -->
+    <header class="transparency-header">
+        <div class="container">
+            <span class="gold-tag" style="background: rgba(212, 175, 55, 0.1);">Our Commitment</span>
+            <h1>Radical Transparency</h1>
+            <p>Trust is earned through verifiable action. Explore our financial allocations, read our audited reports, and meet the governance board ensuring every rupee creates impact.</p>
+        </div>
+    </header>
+
+    <!-- ===== FINANCIAL CONTENT ===== -->
+    <main class="transparency-content">
+        <div class="container">
+            
+            <div class="fin-grid">
+                <!-- Allocation Chart -->
+                <div class="fin-card">
+                    <h3>FY 2022-23 Allocation</h3>
+                    <p style="color: var(--text2); margin-bottom: 32px; font-size: 0.95rem;">Out of ₹12.4 Cr total funds managed, including ₹2.1 Cr in FCRA foreign contributions.</p>
+                    
+                    <div class="donut-chart-container">
+                        <div class="donut-chart" role="img" aria-label="Donut chart showing 88% Field Programs, 8% Administration, 4% Fundraising">
+                            <div class="donut-hole"></div>
+                        </div>
+                        <div class="donut-legend">
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: var(--terra);"></div>
+                                <strong>88%</strong> Field Programs
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: var(--slate);"></div>
+                                <strong>8%</strong> Administration
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: var(--gold);"></div>
+                                <strong>4%</strong> Fundraising
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reports Downloads -->
+                <div class="fin-card">
+                    <h3>Audited Reports</h3>
+                    <p style="color: var(--text2); margin-bottom: 32px; font-size: 0.95rem;">All financial statements are independently audited by KPMG India to ensure strict regulatory compliance.</p>
+                    
+                    <div class="report-list">
+                        <a href="#" class="report-item" onclick="alert('Downloading simulated PDF...'); return false;">
+                            <div class="report-item-title"><i class="fa-solid fa-file-pdf"></i> Annual Report 2022-23</div>
+                            <span class="report-item-size">4.2 MB</span>
+                        </a>
+                        <a href="#" class="report-item" onclick="alert('Downloading simulated PDF...'); return false;">
+                            <div class="report-item-title"><i class="fa-solid fa-file-pdf"></i> FCRA Quarterly Returns (Q4)</div>
+                            <span class="report-item-size">1.1 MB</span>
+                        </a>
+                        <a href="#" class="report-item" onclick="alert('Downloading simulated PDF...'); return false;">
+                            <div class="report-item-title"><i class="fa-solid fa-file-pdf"></i> Annual Report 2021-22</div>
+                            <span class="report-item-size">3.8 MB</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Governance -->
+            <div class="gov-section">
+                <h2 class="sec-title" style="text-align: center;">Governance & Leadership</h2>
+                <p class="sec-desc" style="text-align: center; margin: 0 auto;">Our board of directors provides rigorous oversight, entirely pro-bono.</p>
+                
+                <div class="gov-grid">
+                    <div class="gov-card">
+                        <h4>Dr. Arvind Mehta</h4>
+                        <span>Chairman of the Board</span>
+                        <p>Former Director at the All India Institute of Medical Sciences (AIIMS). Oversees the Sanjeevani healthcare methodology.</p>
+                    </div>
+                    <div class="gov-card">
+                        <h4>Sunita Rao</h4>
+                        <span>Chief Field Officer</span>
+                        <p>20+ years of grassroots experience in rural Maharashtra. Architect of the Akshar education distribution network.</p>
+                    </div>
+                    <div class="gov-card">
+                        <h4>Vikram Dalal</h4>
+                        <span>Financial Director</span>
+                        <p>Ex-Partner at a Big Four accounting firm. Ensures strict adherence to Section 8 and FCRA compliance standards.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="compliance-row">
+                <div class="comp-badge"><i class="fa-solid fa-landmark"></i><div><strong>Section 8</strong><span>CIN: U85300MH2014NPL123456</span></div></div>
+                <div class="comp-badge"><i class="fa-solid fa-file-invoice-dollar"></i><div><strong>80G Tax Exempt</strong><span>Reg: AABBCC1234D/10(23)</span></div></div>
+                <div class="comp-badge"><i class="fa-solid fa-globe"></i><div><strong>FCRA Approved</strong><span>Reg No: 083781234</span></div></div>
+                <div class="comp-badge"><i class="fa-solid fa-certificate"></i><div><strong>ISO 9001:2015</strong><span>Quality Certified</span></div></div>
+            </div>
+            <hr class="footer-rule">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-logo brand-logo-footer"><span class="brand-mark"><i class="fa-solid fa-seedling"></i></span> HOPEBRIDGE</a>
+                    <p class="footer-about">Bridging the gap between privilege and need through sustainable, transparent, community-driven action.</p>
+                    <p class="footer-address"><i class="fa-solid fa-location-dot"></i> 14th Floor, Express Towers, Nariman Point, Mumbai 400021</p>
+                </div>
+                <div class="footer-col"><h4>Organization</h4><ul><li><a href="index.html#initiatives">Initiatives</a></li><li><a href="#">Our Team</a></li><li><a href="#">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Accountability</h4><ul><li><a href="transparency.html">Annual Reports</a></li><li><a href="transparency.html">Governance</a></li></ul></div>
+                <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HopeBridge Foundation. All rights reserved. PAN: AABBCC1234D</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

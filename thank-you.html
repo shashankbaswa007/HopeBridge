@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | HopeBridge Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .success-page { min-height: 100vh; display: flex; flex-direction: column; background: var(--parchment); }
+        .success-main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 60px 24px; }
+        .success-card { background: var(--white); padding: 60px; border-radius: var(--radius); box-shadow: 0 12px 48px rgba(21,42,34,.06); max-width: 640px; text-align: center; border-top: 4px solid var(--terra); }
+        .success-icon { width: 80px; height: 80px; background: rgba(16, 185, 129, 0.1); color: #10B981; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 32px; animation: scaleIn 0.5s var(--spring); }
+        @keyframes scaleIn { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+        .success-card h1 { font-size: 2.8rem; margin-bottom: 16px; }
+        .success-card p { font-size: 1.1rem; color: var(--text2); margin-bottom: 32px; line-height: 1.7; }
+        .receipt-box { background: var(--slate-light); color: var(--white); border-radius: var(--radius); padding: 24px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; text-align: left; }
+        .receipt-info h4 { font-family: 'Inter', sans-serif; font-size: 1.05rem; color: var(--white); margin-bottom: 4px; }
+        .receipt-info span { font-size: 0.85rem; color: rgba(255,255,255,.6); }
+        .receipt-box .btn { background: var(--white); color: var(--slate); border: none; padding: 12px 24px; font-size: 0.95rem; }
+        .receipt-box .btn:hover { background: var(--parchment); }
+        .success-next { border-top: 1px solid var(--border); padding-top: 32px; text-align: left; }
+        .success-next h4 { font-family: 'Inter', sans-serif; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text2); margin-bottom: 16px; }
+        .next-card { display: flex; align-items: center; gap: 16px; background: var(--parchment); padding: 16px; border-radius: var(--radius); text-decoration: none; transition: transform 0.3s; }
+        .next-card:hover { transform: translateY(-3px); }
+        .next-card img { width: 64px; height: 64px; border-radius: 8px; object-fit: cover; }
+        .next-card-text strong { display: block; color: var(--slate); font-size: 1rem; margin-bottom: 4px; }
+        .next-card-text span { font-size: 0.85rem; color: var(--terra); font-weight: 500; }
+        
+        @media(max-width: 600px) {
+            .success-card { padding: 40px 24px; }
+            .receipt-box { flex-direction: column; gap: 16px; align-items: flex-start; }
+            .receipt-box .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body class="success-page">
+
+    <nav class="navbar" style="position: static; background: var(--white);">
+        <div class="container nav-container" style="justify-content: center;">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-mark"><i class="fa-solid fa-seedling"></i></span>
+                HOPEBRIDGE
+            </a>
+        </div>
+    </nav>
+
+    <main class="success-main">
+        <div class="success-card">
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <h1>Thank you for your generosity.</h1>
+            <p>Your donation has been successfully processed. Because of you, a community in rural India is one step closer to breaking the cycle of poverty.</p>
+            
+            <div class="receipt-box">
+                <div class="receipt-info">
+                    <h4>80G Tax Receipt Ready</h4>
+                    <span>Transaction ID: TXN-89347291 • A copy has been emailed to you.</span>
+                </div>
+                <button class="btn" onclick="alert('Downloading simulated PDF receipt...')"><i class="fa-solid fa-download"></i> Download PDF</button>
+            </div>
+
+            <div class="success-next">
+                <h4>While you're here</h4>
+                <a href="index.html#stories" class="next-card">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=150&auto=format&fit=crop" alt="Field note">
+                    <div class="next-card-text">
+                        <strong>Read our latest Field Note</strong>
+                        <span>How Meera became the first graduate &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" style="padding: 40px 0;">
+        <div class="container" style="text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem;">
+            &copy; 2024 HopeBridge Foundation. A registered Section 8 Non-Profit.
+        </div>
+    </footer>
+
+</body>
+</html>
